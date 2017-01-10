@@ -1,0 +1,9 @@
+#Generate keytab using ktutil
+
+$ktutil
+ktutil: addent -password -p a1234@realm -k 1 -e rc4-hmac
+password for a1234@realm:
+ktutil: wkt /tmp/a1234/a1234.keytab
+ktutil:quit
+
+
